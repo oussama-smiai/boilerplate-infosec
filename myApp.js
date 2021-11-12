@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 var helmet = require('helmet');
 app.use(helmet.xssFilter());
+app.use(helmet.noSniff())
 
 
 

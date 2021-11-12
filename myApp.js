@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 var helmet = require('helmet');
-const bcrypt = require('bcrypt')
+const bcrypt = require('BCrypt')
 app.use(helmet({
   frameguard: {         // configure
     action: 'deny'

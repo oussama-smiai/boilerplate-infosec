@@ -3,7 +3,7 @@ const app = express();
 var helmet = require('helmet');
 app.use(helmet.xssFilter());
 app.use(helmet.noSniff())
-
+app.use(helmet.ieNoOpen())
 
 
 
